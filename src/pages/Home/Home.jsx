@@ -22,7 +22,7 @@ function Home() {
     <div className={styled.home}>
       <Header />
       {Answers.map((Answer , index) => (
-        <Question key={index} question={Answer.question} answer={Answer.incorrect_answers} number={indexn}/>
+        <Question key={index} question={Answer.question} answer={Answer.incorrect_answers} number={index}/>
       ))}
       <Footer />
     </div>
