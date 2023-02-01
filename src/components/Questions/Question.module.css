@@ -1,0 +1,33 @@
+.question {
+    margin: auto;
+
+}
+
+
+.qBox {
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    height: 400px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+}
+
+
+.qBox h1 {
+    background-color: #41729F;
+    padding: 10px;
+    border-radius: 5px;
+    color: #C3E0E5;
+}
+
+.qBox p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.qBox span {
+    font-size: 25px;
+}
