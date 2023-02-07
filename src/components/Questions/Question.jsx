@@ -11,7 +11,7 @@ function Question(props) {
             <p>
               <span>{props.number + 1}/10-</span> {props.question}
             </p>
-            <Button answer={props.answer}/>
+            <Button correct={props.correct} incorrect={props.incorrect} />
           </div>
         </div>
       </div>

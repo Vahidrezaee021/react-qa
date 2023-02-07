@@ -12,7 +12,10 @@ function Home() {
       .get("https://opentdb.com/api.php?amount=10&category=9&type=boolean")
       .then((result) => {
         SetAnswers(result.data.results);
-        console.log(result.data.results)
+        let items = result.data.results.map((item) => {
+          console.log(item.correct_answer)
+          console.log(result.data.results)
+        })
       })
       .catch((error) => {
         console.log(error);
@@ -21,9 +24,16 @@ function Home() {
   return (
     <div className={styled.home}>
       <Header />
-      {Answers.map((Answer , index) => (
-        <Question key={index} question={Answer.question} answer={Answer.incorrect_answers} number={index}/>
+      {Answers.map((Answer, index) => (
+        <Question
+          key={index}
+          question={Answer.question}
+          number={index}
+          correct={Answer.correct_answer}
+          incorrect={Answer.incorrect_answers[0]}
+        />
       ))}
+
       <Footer />
     </div>
   );
